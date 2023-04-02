@@ -19,111 +19,161 @@
   </head>
   <body class="body">
     <header>
-      <div>
-        <a href="./index.html">
-          <img src="./images/logo2.png" alt="logo" />
-        </a>
-        <ul class="list">
-          <li>Про чохли</li>
-          <li>Як виглядають</li>
-          <li>Відгуки</li>
-          <li>Як доставляємо</li>
-          <li>Контакти</li>
-        </ul>
-        <ul class="list">
-          <li>
-            <svg width="70" height="60">
-              <use href="./images/svg/sprite.svg#icon-telegram"></use>
-            </svg>
+      <div class="container header">
+        <nav class="navigation">
+          <a class="link" href="./index.html">
+            <img class="logo" src="./images/logo2.png" alt="logo" />
+          </a>
+          <ul class="list menu">
+            <li class="nav-item">
+              <a class="link" href="">Про чохли</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="">Як виглядають</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="">Відгуки</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="">Як доставляємо</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list menu">
+          <li class="social-item">
+            <a
+              class="link"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon">
+                <use href="./images/svg/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <svg width="70" height="60">
-              <use href="./images/svg/sprite.svg#icon-viber"></use>
-            </svg>
+          <li class="social-item">
+            <a
+              class="link"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon">
+                <use href="./images/svg/sprite.svg#icon-viber"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <svg width="70" height="60">
-              <use href="./images/svg/sprite.svg#icon-youtube"></use>
-            </svg>
+          <li class="social-item">
+            <a
+              class="link"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon">
+                <use href="./images/svg/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section>
-        <img src="./images/main_armchair.png" alt="armchair" />
-        <div>
-          <h1>Автомобільні чохли</h1>
-          <ul class="list">
-            <li>
-              <svg width="14">
-                <use href="./images/svg/sprite.svg#icon-circle"></use>
-              </svg>
-              Виготовлені з Європейської ткани
-            </li>
-            <li>
-              <svg width="14">
-                <use href="./images/svg/sprite.svg#icon-circle"></use>
-              </svg>
-              Повторюють оригінальну форму сидіннь !
-            </li>
-            <li>
-              <svg width="14">
-                <use href="./images/svg/sprite.svg#icon-circle"></use>
-              </svg>
-              Зроблено в Україні !
-            </li>
-          </ul>
-          <div>
-            <button>Більше інформації</button>
-            <button>Зробити замовлення</button>
+      <section class="hero">
+        <div class="container hero-container">
+          <img
+            class="hero-img"
+            src="./images/main_armchair.png"
+            alt="armchair"
+          />
+          <div class="hero-content">
+            <h1 class="heading">
+              <span class="heading-word">Автомобільні</span> чохли
+            </h1>
+            <ul class="list">
+              <li class="hero-item">
+                <svg class="marker">
+                  <use href="./images/svg/sprite.svg#icon-circle"></use>
+                </svg>
+                Виготовлені з Європейської ткани
+              </li>
+              <li class="hero-item">
+                <svg class="marker">
+                  <use href="./images/svg/sprite.svg#icon-circle"></use>
+                </svg>
+                <p>Повторюють оригінальну форму сидіннь !</p>
+              </li>
+              <li class="hero-item">
+                <svg class="marker">
+                  <use href="./images/svg/sprite.svg#icon-circle"></use>
+                </svg>
+                <p>Зроблено в Україні !</p>
+              </li>
+            </ul>
+            <div class="btn">
+              <button class="button" type="button">Більше інформації</button>
+              <button class="button" type="submit">Зробити замовлення</button>
+            </div>
           </div>
         </div>
       </section>
       <section>
-        <h2>Переваги наших авточохлів !</h2>
-        <div>
-          <img src="./images/photo1.png" alt="photo1" />
-          <div>
-            <h2>Ідеально сідаюсь на сидіння</h2>
-            <p>
-              Чохли точно повторюють форму та розміри оригінальних сидінь,
-              завдяки чому ідеально сидять та забезпечують повний захист від
-              пилу, бруду та інших забруднень. Вони створюють додатковий рівень
-              комфорту та покращують загальний зовнішній вигляд автомобіля.
-            </p>
+        <div class="container">
+          <h2 class="title">
+            Переваги наших <span class="heading-word">авточохлів !</span>
+          </h2>
+          <div class="description">
+            <img src="./images/photo1.png" alt="photo1" />
+            <div>
+              <div>
+                <h3>
+                  <span class="heading-word">Ідеально</span> сідаюсь на сидіння
+                </h3>
+                <p>
+                  Чохли точно повторюють форму та розміри оригінальних сидінь,
+                  завдяки чому ідеально сидять та забезпечують повний захист від
+                  пилу, бруду та інших забруднень. Вони створюють додатковий
+                  рівень комфорту та покращують загальний зовнішній вигляд
+                  автомобіля.
+                </p>
+              </div>
+              <div>
+                <h3>Просте <span class="heading-word">встановлення</span></h3>
+                <p>
+                  Всі чохли прості в установці і не потребують особливих навичок
+                  чи інструментів. Це дозволяє легко встановити або зняти чохли
+                  у будь-який час, наприклад, щоб їх можна було почистити.
+                </p>
+              </div>
+            </div>
           </div>
           <div>
-            <h2>Просте встановлення</h2>
-            <p>
-              Всі чохли прості в установці і не потребують особливих навичок чи
-              інструментів. Це дозволяє легко встановити або зняти чохли у
-              будь-який час, наприклад, щоб їх можна було почистити.
-            </p>
+            <div>
+              <h3>Легко доглядади</h3>
+              <p>
+                Автомобільні чохли - це не тільки зручний спосіб захистити
+                сидіння від забруднень, але і легкий у догляді елемент салону.
+                Без зайвих зусиль їх можна прати у пральній машині. Правильний
+                догляд за чохлами допоможе зберегти їх в ідеальному стані на
+                тривалий час та забезпечить приємний вигляд салону.
+              </p>
+            </div>
+            <div>
+              <h3>Виготовлено в Україні !</h3>
+              <p>
+                Купуючи автомобільні чохли від українських виробників, Ви
+                отримуєте якісні та надійні вироби, які відповідають всім
+                стандартам та вимогам якості. Обирай українське та
+                насолоджуйтеся комфортом та безпекою під час кожної поїздки.
+                Підтримуй вітчизняного виробника.
+              </p>
+            </div>
+            <img src="./images/photo2.png" alt="photo2" />
           </div>
-        </div>
-        <div>
-          <div>
-            <h2>Легко доглядади</h2>
-            <p>
-              Автомобільні чохли - це не тільки зручний спосіб захистити сидіння
-              від забруднень, але і легкий у догляді елемент салону. Без зайвих
-              зусиль їх можна прати у пральній машині. Правильний догляд за
-              чохлами допоможе зберегти їх в ідеальному стані на тривалий час та
-              забезпечить приємний вигляд салону.
-            </p>
-          </div>
-          <div>
-            <h2>Виготовлено в Україні !</h2>
-            <p>
-              Купуючи автомобільні чохли від українських виробників, Ви
-              отримуєте якісні та надійні вироби, які відповідають всім
-              стандартам та вимогам якості. Обирай українське та насолоджуйтеся
-              комфортом та безпекою під час кожної поїздки. Підтримуй
-              вітчизняного виробника.
-            </p>
-          </div>
-          <img src="./images/photo2.png" alt="photo2" />
         </div>
       </section>
       <section>
@@ -133,34 +183,34 @@
       <section>
         <h2>Як зробити замовлення ?</h2>
         <ul class="list">
-          <li>
+          <li class="item">
             <svg>
               <use></use>
             </svg>
-            <h3>Залищаєте заявку</h3>
+            <h4>Залищаєте заявку</h4>
             <p>Залиште заявку, або напишіть нам в viber / telegram.</p>
           </li>
-          <li>
+          <li class="item">
             <svg>
               <use></use>
             </svg>
-            <h3>Уточнюємо деталі</h3>
+            <h4>Уточнюємо деталі</h4>
             <p>Уточнюємо деталі, за вашою комплектацією, щоб все підійшло.</p>
           </li>
-          <li>
+          <li class="item">
             <svg>
               <use></use>
             </svg>
-            <h3>Пакуємо</h3>
+            <h4>Пакуємо</h4>
             <p>
               Пакуємо посилку, щоб вам не довелося платити за упаковку на пош
             </p>
           </li>
-          <li>
+          <li class="item">
             <svg>
               <use></use>
             </svg>
-            <h3>Відправляємо</h3>
+            <h4>Відправляємо</h4>
             <p>
               Відправляємо поштовими службами: - Нова пошта - УкрПошта Оплачуєте
               при отриманні.
@@ -174,44 +224,45 @@
       </section>
     </main>
     <footer>
+      <h2>Наші контакти</h2>
       <div>
-        <h2>
+        <h3>
           <span>
             <svg>
               <use href="./images/svg/sprite.svg#icon-phone_footer"></use>
             </svg>
           </span>
-          Наші контакти
-        </h2>
+          Телефони
+        </h3>
         <ul class="list">
-          <li>Vodafone +380952276244</li>
-          <li>Kyivstar +380952276244</li>
-          <li>Life +380952276244</li>
+          <li class="item">Vodafone +380952276244</li>
+          <li class="item">Kyivstar +380952276244</li>
+          <li class="item">Life +380952276244</li>
         </ul>
       </div>
       <div>
-        <h2>
+        <h3>
           <span>
             <svg>
               <use href="./images/svg/sprite.svg#icon-clock_footer"></use>
             </svg>
           </span>
           Грфік роботи
-        </h2>
+        </h3>
         <ul class="list">
-          <li>
+          <li class="item">
             <svg>
               <use href="./images/svg/sprite.svg#icon-checkmark"></use>
             </svg>
             Вівторок - Субота
           </li>
-          <li>
+          <li class="item">
             <svg>
               <use href="./images/svg/sprite.svg#icon-checkmark"></use>
             </svg>
             з 9:00 до 18:00
           </li>
-          <li>
+          <li class="item">
             <svg>
               <use href="./images/svg/sprite.svg#icon-checkmark"></use>
             </svg>
@@ -220,17 +271,17 @@
         </ul>
       </div>
       <div>
-        <h2>
+        <h3>
           <span>
             <svg>
               <use href="./images/svg/sprite.svg#icon-location_footer"></use>
             </svg>
           </span>
           Адреса
-        </h2>
+        </h3>
         <ul class="list">
-          <li>Місто Харкі</li>
-          <li>авторинок Лоск</li>
+          <li class="item">Місто Харкі</li>
+          <li class="item">авторинок Лоск</li>
         </ul>
       </div>
     </footer>
