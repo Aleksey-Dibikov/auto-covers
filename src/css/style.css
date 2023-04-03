@@ -4,7 +4,7 @@
   --title-second-color: #00a7fe;
   --text-color: #131a34;
   --additional-color: #ffcb00;
-  --button-color: #fff;
+  --white-color: #fff;
   --title-font: Lobster, sans-serif;
   --second-font: El Messiri, sans-serif;
 }
@@ -46,7 +46,7 @@ img {
 
 .link {
   text-decoration: none;
-  color: var(--title-color);
+  color: currentColor;
   /* padding-top: 15px;
   padding-bottom: 15px;
   align-items: center;
@@ -181,7 +181,7 @@ header {
 .button {
   width: 195px;
   height: 40px;
-  background-color: var(--button-color);
+  background-color: var(--white-color);
   border: 2px solid #00a7fe;
   border-radius: 5px;
   cursor: pointer;
@@ -201,7 +201,7 @@ header {
 .button:hover,
 .button:focus {
   background-color: var(--title-second-color);
-  color: var(--button-color);
+  color: var(--white-color);
 }
 
 .title {
@@ -263,4 +263,74 @@ header {
   font-size: 14px;
   line-height: 1.57;
   color: var(--title-color);
+}
+
+.info-container {
+  margin-bottom: 120px;
+}
+
+.information {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, auto);
+}
+
+.footer {
+  background-color: var(--title-color);
+  margin-bottom: 100px;
+}
+
+.title-footer {
+  color: var(--white-color);
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-footer {
+  width: 40px;
+  height: 40px;
+  fill: var(--white-color);
+  margin-right: 30px;
+}
+
+.footer-heading {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-title {
+  color: var(--white-color);
+}
+
+.list-footer {
+  text-align-last: justify;
+}
+
+.item-footer {
+  font-family: var(--second-font);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.59;
+  color: var(--white-color);
+}
+
+.item-footer:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-marker {
+  width: 17px;
+  height: 17px;
+}
+
+.footer-description {
+  width: calc(100% / 12 * 3);
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }

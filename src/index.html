@@ -194,13 +194,13 @@
         </div>
       </section>
       <section>
-        <div class="container">
+        <div class="container info-container">
           <h2 class="title">
             Як зробити <span class="heading-word">замовлення ?</span>
           </h2>
-          <ul class="list">
+          <ul class="list information">
             <li class="item">
-              <svg>
+              <svg width="75" height="75">
                 <use></use>
               </svg>
               <h4 class="title-head">Залищаєте заявку</h4>
@@ -209,7 +209,7 @@
               </p>
             </li>
             <li class="item">
-              <svg>
+              <svg width="75" height="75">
                 <use></use>
               </svg>
               <h4 class="title-head">Уточнюємо деталі</h4>
@@ -218,7 +218,7 @@
               </p>
             </li>
             <li class="item">
-              <svg>
+              <svg width="75" height="75">
                 <use></use>
               </svg>
               <h4 class="title-head">Пакуємо</h4>
@@ -227,7 +227,7 @@
               </p>
             </li>
             <li class="item">
-              <svg>
+              <svg width="75" height="75">
                 <use></use>
               </svg>
               <h4 class="title-head">Відправляємо</h4>
@@ -240,70 +240,107 @@
         </div>
       </section>
       <section>
-        <h2>Відгуки покупців.</h2>
-        <div></div>
+        <div class="container">
+          <h2 class="title">
+            <span class="heading-word">Відгуки</span> покупців.
+          </h2>
+          <div></div>
+        </div>
       </section>
     </main>
-    <footer>
-      <h2>Наші контакти</h2>
-      <div>
-        <h3>
-          <span>
-            <svg>
-              <use href="./images/svg/sprite.svg#icon-phone_footer"></use>
-            </svg>
-          </span>
-          Телефони
-        </h3>
-        <ul class="list">
-          <li class="item">Vodafone +380952276244</li>
-          <li class="item">Kyivstar +380952276244</li>
-          <li class="item">Life +380952276244</li>
-        </ul>
-      </div>
-      <div>
-        <h3>
-          <span>
-            <svg>
-              <use href="./images/svg/sprite.svg#icon-clock_footer"></use>
-            </svg>
-          </span>
-          Грфік роботи
-        </h3>
-        <ul class="list">
-          <li class="item">
-            <svg>
-              <use href="./images/svg/sprite.svg#icon-checkmark"></use>
-            </svg>
-            Вівторок - Субота
-          </li>
-          <li class="item">
-            <svg>
-              <use href="./images/svg/sprite.svg#icon-checkmark"></use>
-            </svg>
-            з 9:00 до 18:00
-          </li>
-          <li class="item">
-            <svg>
-              <use href="./images/svg/sprite.svg#icon-checkmark"></use>
-            </svg>
-            Вихідні: Неділя, Понеділок
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3>
-          <span>
-            <svg>
-              <use href="./images/svg/sprite.svg#icon-location_footer"></use>
-            </svg>
-          </span>
-          Адреса
-        </h3>
-        <ul class="list">
-          <li class="item">Місто Харкі</li>
-          <li class="item">авторинок Лоск</li>
-        </ul>
+    <footer class="footer">
+      <div class="container footer-container">
+        <h2 class="title title-footer">
+          Наші <span class="heading-word">контакти</span>
+        </h2>
+        <div class="footer-info">
+          <div class="footer-description">
+            <div class="footer-heading">
+              <svg class="icon-footer">
+                <use href="./images/svg/sprite.svg#icon-phone_footer"></use>
+              </svg>
+              <h3 class="title-heading footer-title">Телефони</h3>
+            </div>
+            <ul class="list list-footer">
+              <li class="item item-footer">
+                <span class="heading-word">Vodafone</span> +380952276244
+              </li>
+              <li class="item item-footer">
+                <span class="heading-word">Kyivstar</span> +380952276244
+              </li>
+              <li class="item item-footer">
+                <span class="heading-word">Life</span> +380952276244
+              </li>
+            </ul>
+          </div>
+          <div class="footer-description">
+            <div class="footer-heading">
+              <svg class="icon-footer">
+                <use
+                  stroke="#242932"
+                  href="./images/svg/sprite.svg#icon-clock_footer"
+                ></use>
+              </svg>
+              <h3 class="title-heading footer-title">Грфік роботи</h3>
+            </div>
+            <ul class="list">
+              <li class="item item-footer">
+                <svg class="marker footer-marker">
+                  <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                </svg>
+                Вівторок - Субота
+              </li>
+              <li class="item item-footer">
+                <svg class="marker footer-marker">
+                  <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                </svg>
+                з 9:00 до 18:00
+              </li>
+              <li class="item item-footer">
+                <svg class="marker footer-marker">
+                  <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                </svg>
+                Вихідні: Неділя, Понеділок
+              </li>
+            </ul>
+          </div>
+          <div class="footer-description">
+            <div class="footer-heading">
+              <svg class="icon-footer">
+                <use href="./images/svg/sprite.svg#icon-location_footer"></use>
+              </svg>
+              <h3 class="title-heading footer-title">Адреса</h3>
+            </div>
+            <ul class="list">
+              <li class="item item-footer">
+                <a
+                  class="link"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="marker footer-marker">
+                    <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                  </svg>
+                  Місто Харкі
+                </a>
+              </li>
+              <li class="item item-footer">
+                <a
+                  class="link"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="marker footer-marker">
+                    <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                  </svg>
+                  Авторинок Лоск
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
