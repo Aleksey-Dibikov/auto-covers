@@ -175,8 +175,6 @@ header {
 }
 
 .btn {
-  display: flex;
-  justify-content: space-between;
   margin-top: 60px;
 }
 
@@ -196,6 +194,10 @@ header {
   transition-duration: 250ms;
 }
 
+.button:not(:last-child) {
+  margin-right: 60px;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--title-second-color);
@@ -210,6 +212,55 @@ header {
   margin-bottom: 60px;
 }
 
+.advances {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advances:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.title-heading {
+  font-size: 30px;
+  line-height: 1.27;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+
 .description {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: calc(100% / 12 * 6);
+}
+
+.text {
+  font-family: var(--second-font);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.59;
+  color: var(--text-color);
+}
+
+.description-container {
+  margin-bottom: 120px;
+}
+
+.presentetion {
+  width: calc(100% / 12 * 7);
+}
+
+.title-head {
+  font-size: 23px;
+  line-height: 1.26;
+  color: var(--title-second-color);
+}
+
+.text-description {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--title-color);
 }
