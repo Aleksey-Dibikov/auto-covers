@@ -118,6 +118,15 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   fill: var(--additional-color);
+  transition-duration: 250ms;
+}
+
+.icon:hover {
+  background-image: url(../images/icon-hover.png);
+  background-size: 70px 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  fill: var(--title-second-color);
 }
 
 .hero {
@@ -182,7 +191,7 @@ header {
   width: 195px;
   height: 40px;
   background-color: var(--white-color);
-  border: 2px solid #00a7fe;
+  border: 2px solid var(--title-second-color);
   border-radius: 5px;
   cursor: pointer;
   font-family: var(--second-font);

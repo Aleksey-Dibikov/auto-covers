@@ -15,30 +15,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body class="body">
     <header>
       <div class="container header">
         <nav class="navigation">
           <a class="link" href="./index.html">
-            <img class="logo" src="./images/logo2.png" alt="logo" />
+            <img class="logo" src="./src/images/logo2.png" alt="logo" />
           </a>
           <ul class="list menu">
             <li class="nav-item">
-              <a class="link" href="">Про чохли</a>
+              <a class="link" href="#about">Про чохли</a>
             </li>
             <li class="nav-item">
-              <a class="link" href="">Як виглядають</a>
+              <a class="link" href="#visualization">Як виглядають</a>
             </li>
             <li class="nav-item">
-              <a class="link" href="">Відгуки</a>
+              <a class="link" href="#reviews">Відгуки</a>
             </li>
             <li class="nav-item">
-              <a class="link" href="">Як доставляємо</a>
+              <a class="link" href="#information">Як доставляємо</a>
             </li>
             <li class="nav-item">
-              <a class="link" href="">Контакти</a>
+              <a class="link" href="#footer">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -46,12 +46,12 @@
           <li class="social-item">
             <a
               class="link"
-              href="http://"
+              href="https://"
               target="_blank"
               rel="noopener noreferrer"
             >
               <svg class="icon">
-                <use href="./images/svg/sprite.svg#icon-telegram"></use>
+                <use href="./src/images/svg/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
@@ -63,7 +63,7 @@
               rel="noopener noreferrer"
             >
               <svg class="icon">
-                <use href="./images/svg/sprite.svg#icon-viber"></use>
+                <use href="./src/images/svg/sprite.svg#icon-viber"></use>
               </svg>
             </a>
           </li>
@@ -75,7 +75,7 @@
               rel="noopener noreferrer"
             >
               <svg class="icon">
-                <use href="./images/svg/sprite.svg#icon-youtube"></use>
+                <use href="./src/images/svg/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -87,7 +87,7 @@
         <div class="container hero-container">
           <img
             class="hero-img"
-            src="./images/main_armchair.png"
+            src="./src/images/main_armchair.png"
             alt="armchair"
           />
           <div class="hero-content">
@@ -121,13 +121,13 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="about">
         <div class="container description-container">
           <h2 class="title">
             Переваги наших <span class="heading-word">авточохлів !</span>
           </h2>
           <div class="advances">
-            <img src="./images/photo1.png" alt="photo1" />
+            <img src="./src/images/photo1.png" alt="photo1" />
             <div class="description">
               <div>
                 <h3 class="title-heading">
@@ -180,11 +180,11 @@
                 </p>
               </div>
             </div>
-            <img src="./images/photo2.png" alt="photo2" />
+            <img src="./src/images/photo2.png" alt="photo2" />
           </div>
         </div>
       </section>
-      <section>
+      <section id="visualization">
         <div class="container">
           <h2 class="title presentetion">
             Бажаєте побачити як
@@ -198,28 +198,28 @@
               <li class="item photo-item">
                 <img
                   class="img-photo"
-                  src="./images/presentation-photo.png"
+                  src="./src/images/presentation-photo.png"
                   alt="covers"
                 />
               </li>
               <li class="item additional">
                 <img
                   class="additional-photo"
-                  src="./images/presentation-photo.png"
+                  src="./src/images/presentation-photo.png"
                   alt="covers"
                 />
               </li>
               <li class="item">
                 <img
                   class="additional-photo additional-item"
-                  src="./images/presentation-photo.png"
+                  src="./src/images/presentation-photo.png"
                   alt="covers"
                 />
               </li>
               <li class="item basic-item">
                 <img
                   class="basic-photo"
-                  src="./images/presentation-photo.png"
+                  src="./src/images/presentation-photo.png"
                   alt="covers"
                 />
               </li>
@@ -230,7 +230,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="information">
         <div class="container info-container">
           <h2 class="title">
             Як зробити <span class="heading-word">замовлення ?</span>
@@ -238,7 +238,7 @@
           <ul class="list information">
             <li class="item item-info">
               <svg class="icon-info">
-                <use href="./images/svg/sprite.svg#icon-orders"></use>
+                <use href="./src/images/svg/sprite.svg#icon-orders"></use>
               </svg>
               <h4 class="title-head">Залищаєте заявку</h4>
               <p class="text-description">
@@ -247,7 +247,7 @@
             </li>
             <li class="item item-info">
               <svg class="icon-info">
-                <use href="./images/svg/sprite.svg#icon-phone"></use>
+                <use href="./src/images/svg/sprite.svg#icon-phone"></use>
               </svg>
               <h4 class="title-head">Уточнюємо деталі</h4>
               <p class="text-description">
@@ -256,7 +256,7 @@
             </li>
             <li class="item item-info">
               <svg class="icon-info">
-                <use href="./images/svg/sprite.svg#icon-box"></use>
+                <use href="./src/images/svg/sprite.svg#icon-box"></use>
               </svg>
               <h4 class="title-head">Пакуємо</h4>
               <p class="text-description">
@@ -265,7 +265,9 @@
             </li>
             <li class="item item-info">
               <svg class="icon-info icon-dellivery">
-                <use href="./images/svg/sprite.svg#icon-delivery-truck"></use>
+                <use
+                  href="./src/images/svg/sprite.svg#icon-delivery-truck"
+                ></use>
               </svg>
               <h4 class="title-head">Відправляємо</h4>
               <p class="text-description">
@@ -277,21 +279,23 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="reviews">
         <div class="container">
           <h2 class="title">
             <span class="heading-word">Відгуки</span> покупців.
           </h2>
           <ul class="list reviews">
             <li class="item">
-              <img src="./images/sholom.png" alt="reviews" />
+              <img src="./src/images/sholom.png" alt="reviews" />
             </li>
-            <li class="item"><img src="./images/tanay.png" alt="reviews" /></li>
+            <li class="item">
+              <img src="./src/images/tanay.png" alt="reviews" />
+            </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container footer-container">
         <h2 class="title title-footer">
           Наші <span class="heading-word">контакти</span>
@@ -300,7 +304,7 @@
           <div class="footer-description">
             <div class="footer-heading">
               <svg class="icon-footer">
-                <use href="./images/svg/sprite.svg#icon-phone_footer"></use>
+                <use href="./src/images/svg/sprite.svg#icon-phone_footer"></use>
               </svg>
               <h3 class="title-heading footer-title">Телефони</h3>
             </div>
@@ -324,7 +328,7 @@
               <svg class="icon-footer">
                 <use
                   stroke="#242932"
-                  href="./images/svg/sprite.svg#icon-clock_footer"
+                  href="./src/images/svg/sprite.svg#icon-clock_footer"
                 ></use>
               </svg>
               <h3 class="title-heading footer-title">Грфік роботи</h3>
@@ -332,19 +336,19 @@
             <ul class="list">
               <li class="item item-footer">
                 <svg class="marker footer-marker">
-                  <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                  <use href="./src/images/svg/sprite.svg#icon-checkmark"></use>
                 </svg>
                 Вівторок - Субота
               </li>
               <li class="item item-footer">
                 <svg class="marker footer-marker">
-                  <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                  <use href="./src/images/svg/sprite.svg#icon-checkmark"></use>
                 </svg>
                 з 9:00 до 18:00
               </li>
               <li class="item item-footer">
                 <svg class="marker footer-marker">
-                  <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                  <use href="./src/images/svg/sprite.svg#icon-checkmark"></use>
                 </svg>
                 Вихідні: Неділя, Понеділок
               </li>
@@ -353,7 +357,9 @@
           <div class="footer-description">
             <div class="footer-heading">
               <svg class="icon-footer">
-                <use href="./images/svg/sprite.svg#icon-location_footer"></use>
+                <use
+                  href="./src/images/svg/sprite.svg#icon-location_footer"
+                ></use>
               </svg>
               <h3 class="title-heading footer-title">Адреса</h3>
             </div>
@@ -366,7 +372,9 @@
                   rel="noopener noreferrer"
                 >
                   <svg class="marker footer-marker">
-                    <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                    <use
+                      href="./src/images/svg/sprite.svg#icon-checkmark"
+                    ></use>
                   </svg>
                   Місто Харкі
                 </a>
@@ -379,7 +387,9 @@
                   rel="noopener noreferrer"
                 >
                   <svg class="marker footer-marker">
-                    <use href="./images/svg/sprite.svg#icon-checkmark"></use>
+                    <use
+                      href="./src/images/svg/sprite.svg#icon-checkmark"
+                    ></use>
                   </svg>
                   Авторинок Лоск
                 </a>
