@@ -1,5 +1,9 @@
 .btn {
     margin-top: 60px;
+
+    @media screen and (max-width: 767.98px) {
+        margin-top: 30px;
+    }
 }
 
 .button {
@@ -16,9 +20,18 @@
     color: var(--title-color);
     padding: 10px 20px;
     transition-duration: 250ms;
+
+    @media screen and (max-width: 767.98px) {
+            width: 150px;
+            padding: 9px 8px;
+        }
     
     &:not(:last-child) {
         margin-right: 60px;
+
+        @media screen and (max-width: 767.98px) {
+                margin-right: 38px;
+            }
     }
     
     &:hover,

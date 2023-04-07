@@ -1,5 +1,12 @@
-.menu {
+.nav-menu,
+.social-menu {
     display: flex;
+}
+
+.nav-menu {
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
 }
 
 .nav-item:not(:last-child) {

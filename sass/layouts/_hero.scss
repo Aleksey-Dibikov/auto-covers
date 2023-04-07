@@ -3,6 +3,10 @@
     flex-direction: column;
     justify-content: center;
     width: calc(100% / 12 * 5);
+
+    @media screen and (max-width: 767.98px) {
+        width: calc(100% / 6 * 3);
+    }
 }
 
 .hero-item {
@@ -12,8 +16,17 @@
     font-weight: 600;
     font-size: 17px;
     line-height: 1.59;
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 15px;
+        line-height: 1.53;
+    }
     
     &:not(:last-child) {
         margin-bottom: 30px;
+
+        @media screen and (max-width: 767.98px) {
+            margin-bottom: 20px;
+        }
     }
 }

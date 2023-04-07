@@ -1,6 +1,21 @@
 .hero-img {
     width: 525px;
     height: 443px;
+
+    @media screen and (max-width: 767.98px) {
+        width: 369px;
+        height: 310px;
+    }
+}
+
+.advances-img {
+    width: 459px;
+    height: 464px;
+
+    @media screen and (max-width: 767.98px) {
+        width: 338px;
+        height: 346px;
+    }
 }
 
 .photo {
