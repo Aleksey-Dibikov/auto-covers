@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}

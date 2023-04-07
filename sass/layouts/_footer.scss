@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--title-color);
+    margin-bottom: 100px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-footer {
+    text-align-last: justify;
+}
+
+.item-footer {
+    font-family: var(--second-font);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.59;
+    color: var(--white-color);
+    
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.footer-description {
+    width: calc(100% / 12 * 3);
+}

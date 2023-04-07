@@ -1,0 +1,11 @@
+.information {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, auto);
+}
+
+.reviews {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, auto);
+}

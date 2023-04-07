@@ -1,0 +1,19 @@
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    height: 480px;
+}
+
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}

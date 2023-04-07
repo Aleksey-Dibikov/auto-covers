@@ -1,0 +1,29 @@
+.btn {
+    margin-top: 60px;
+}
+
+.button {
+    width: 195px;
+    height: 40px;
+    background-color: var(--white-color);
+    border: 2px solid var(--title-second-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--second-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--title-color);
+    padding: 10px 20px;
+    transition-duration: 250ms;
+    
+    &:not(:last-child) {
+        margin-right: 60px;
+    }
+    
+    &:hover,
+    &:focus {
+        background-color: var(--title-second-color);
+        color: var(--white-color);
+    }
+}

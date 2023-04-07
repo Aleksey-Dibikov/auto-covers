@@ -1,0 +1,19 @@
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% / 12 * 5);
+}
+
+.hero-item {
+    display: flex;
+    align-items: center;
+    font-family: var(--second-font);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.59;
+    
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

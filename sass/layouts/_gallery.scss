@@ -1,0 +1,21 @@
+.additional {
+    position: relative;
+    transform: translate(0, -30%);
+}
+
+
+
+.additional-item {
+    position: absolute;
+    transform: translate(25%, -130%);
+}
+
+
+
+.basic-item {
+    position: relative;
+    transform: translate(0, -10%);
+    width: 502px;
+    height: 545px;
+    background-image: url(../images/back-2.png);
+}

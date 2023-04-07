@@ -1,0 +1,31 @@
+.advances {
+    display: flex;
+    justify-content: space-between;
+    
+    &:not(:last-child) {
+        margin-bottom: 60px;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: calc(100% / 12 * 6);
+}
+
+.text {
+    font-family: var(--second-font);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.59;
+    color: var(--text-color);
+}
+
+.text-description {
+    font-family: var(--second-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--title-color);
+}

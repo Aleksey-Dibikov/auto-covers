@@ -1,0 +1,41 @@
+.marker {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    fill: var(--title-second-color);
+}
+
+.icon-arrow {
+    width: 67px;
+    height: 67px;
+    fill: var(--title-color);
+    transition-duration: 250ms;
+    
+    &:hover,
+    &:focus {
+        fill: var(--title-second-color);
+    }
+}
+
+.icon-info {
+    width: 75px;
+    height: 75px;
+    fill: var(--title-color);
+    margin-bottom: 30px;
+}
+
+.item .icon-info {
+    width: 100px;
+}
+
+.icon-footer {
+    width: 40px;
+    height: 40px;
+    fill: var(--white-color);
+    margin-right: 30px;
+}
+
+.footer-marker {
+    width: 17px;
+    height: 17px;
+}

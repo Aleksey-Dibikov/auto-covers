@@ -1,0 +1,43 @@
+.hero-img {
+    width: 525px;
+    height: 443px;
+}
+
+.photo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.photo-item {
+    width: 371px;
+    height: 360px;
+    background-image: url(../images/back-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.img-photo,
+.additional-photo,
+.basic-photo {
+    border: 3px solid var(--title-second-color);
+    border-radius: 3px;
+}
+
+.img-photo {
+    position: absolute;
+    transform: translate(20%, -10%);
+    width: 262px;
+    height: 365px;
+}
+
+.additional-photo {
+    width: 100px;
+    height: 100px;
+}
+
+.basic-photo {
+    position: relative;
+    transform: translate(50px, 25px);
+    width: 416px;
+    height: 548px;
+}

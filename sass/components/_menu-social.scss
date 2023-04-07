@@ -1,0 +1,21 @@
+.social-item:not(:last-child) {
+    margin-right: 26px;
+}
+
+.icon {
+    width: 70px;
+    height: 60px;
+    background-image: url(../images/icon-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    fill: var(--additional-color);
+    transition-duration: 250ms;
+    
+    &:hover {
+        background-image: url(../images/icon-hover.png);
+        background-size: 70px 60px;
+        background-position: center;
+        background-repeat: no-repeat;
+        fill: var(--title-second-color);
+    }
+}
