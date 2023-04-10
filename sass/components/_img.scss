@@ -21,6 +21,12 @@
 .photo {
     display: flex;
     align-items: flex-end;
+
+    @media screen and (max-width: 767.98px) {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, auto);
+    }
 }
 
 .photo-item {
@@ -29,6 +35,12 @@
     background-image: url(../images/back-1.png);
     background-repeat: no-repeat;
     background-position: bottom;
+
+    @media screen and (max-width: 767.98px) {
+        width: 306px;
+        height: 274px;
+        background-image: url(../../images/back-1-tab.png);
+    }
 }
 
 .img-photo,
@@ -43,11 +55,21 @@
     transform: translate(20%, -10%);
     width: 262px;
     height: 365px;
+
+    @media screen and (max-width: 767.98px) {
+        width: 216px;
+        height: 278px;
+    }
 }
 
 .additional-photo {
     width: 100px;
     height: 100px;
+
+    @media screen and (max-width: 767.98px) {
+        width: 91px;
+        height: 115px;
+    }
 }
 
 .basic-photo {
@@ -55,4 +77,10 @@
     transform: translate(50px, 25px);
     width: 416px;
     height: 548px;
+
+    @media screen and (max-width: 767.98px) {
+        width: 257px;
+        height: 330px;
+        transform: translate(13%, 5%);
+    }
 }

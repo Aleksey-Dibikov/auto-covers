@@ -15,17 +15,22 @@
     &:focus {
         fill: var(--title-second-color);
     }
+
+    @media screen and (max-width: 767.98px) {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .icon-info {
-    width: 75px;
+    width: 100px;
     height: 75px;
     fill: var(--title-color);
     margin-bottom: 30px;
-}
 
-.item .icon-info {
-    width: 100px;
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 20px;
+    }
 }
 
 .icon-footer {
@@ -33,6 +38,12 @@
     height: 40px;
     fill: var(--white-color);
     margin-right: 30px;
+
+    @media screen and (max-width: 767.98px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+    }
 }
 
 .footer-marker {

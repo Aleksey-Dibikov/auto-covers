@@ -239,6 +239,7 @@ header {
   .title-heading {
     font-size: 25px;
     line-height: 1.24;
+    margin-bottom: 20px;
   }
 }
 
@@ -247,6 +248,11 @@ header {
   line-height: 1.26;
   color: var(--title-second-color);
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767.98px) {
+  .title-head {
+    margin-bottom: 20px;
+  }
 }
 
 .title-footer {
@@ -277,16 +283,23 @@ header {
 .icon-arrow:hover, .icon-arrow:focus {
   fill: var(--title-second-color);
 }
+@media screen and (max-width: 767.98px) {
+  .icon-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .icon-info {
-  width: 75px;
+  width: 100px;
   height: 75px;
   fill: var(--title-color);
   margin-bottom: 30px;
 }
-
-.item .icon-info {
-  width: 100px;
+@media screen and (max-width: 767.98px) {
+  .icon-info {
+    margin-bottom: 20px;
+  }
 }
 
 .icon-footer {
@@ -294,6 +307,13 @@ header {
   height: 40px;
   fill: var(--white-color);
   margin-right: 30px;
+}
+@media screen and (max-width: 767.98px) {
+  .icon-footer {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
 }
 
 .footer-marker {
@@ -327,6 +347,13 @@ header {
   display: flex;
   align-items: flex-end;
 }
+@media screen and (max-width: 767.98px) {
+  .photo {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, auto);
+  }
+}
 
 .photo-item {
   width: 371px;
@@ -334,6 +361,13 @@ header {
   background-image: url(../images/back-1.png);
   background-repeat: no-repeat;
   background-position: bottom;
+}
+@media screen and (max-width: 767.98px) {
+  .photo-item {
+    width: 306px;
+    height: 274px;
+    background-image: url(../../images/back-1-tab.png);
+  }
 }
 
 .img-photo,
@@ -349,10 +383,22 @@ header {
   width: 262px;
   height: 365px;
 }
+@media screen and (max-width: 767.98px) {
+  .img-photo {
+    width: 216px;
+    height: 278px;
+  }
+}
 
 .additional-photo {
   width: 100px;
   height: 100px;
+}
+@media screen and (max-width: 767.98px) {
+  .additional-photo {
+    width: 91px;
+    height: 115px;
+  }
 }
 
 .basic-photo {
@@ -361,11 +407,23 @@ header {
   width: 416px;
   height: 548px;
 }
+@media screen and (max-width: 767.98px) {
+  .basic-photo {
+    width: 257px;
+    height: 330px;
+    transform: translate(13%, 5%);
+  }
+}
 
 .information {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(4, auto);
+}
+@media screen and (max-width: 767.98px) {
+  .information {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .reviews {
@@ -397,10 +455,20 @@ header {
   position: relative;
   transform: translate(0, -30%);
 }
+@media screen and (max-width: 767.98px) {
+  .additional {
+    display: none;
+  }
+}
 
 .additional-item {
   position: absolute;
   transform: translate(25%, -130%);
+}
+@media screen and (max-width: 767.98px) {
+  .additional-item {
+    transform: translate(-15%, -122%);
+  }
 }
 
 .basic-item {
@@ -409,6 +477,14 @@ header {
   width: 502px;
   height: 545px;
   background-image: url(../images/back-2.png);
+}
+@media screen and (max-width: 767.98px) {
+  .basic-item {
+    transform: translate(0, -13%);
+    width: 310px;
+    height: 328px;
+    background-image: url(../../images/back-2-tab.png);
+  }
 }
 
 .hero-content {
@@ -467,6 +543,15 @@ header {
   }
 }
 
+.advances-description {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767.98px) {
+  .advances-description {
+    margin-bottom: 30px;
+  }
+}
+
 .text {
   font-family: var(--second-font);
   font-weight: 600;
@@ -488,6 +573,12 @@ header {
   line-height: 1.57;
   color: var(--title-color);
 }
+@media screen and (max-width: 767.98px) {
+  .text-description {
+    width: 250px;
+    margin: auto;
+  }
+}
 
 .item-info {
   text-align: center;
@@ -497,10 +588,22 @@ header {
   background-color: var(--title-color);
   margin-bottom: 100px;
 }
+@media screen and (max-width: 767.98px) {
+  .footer {
+    margin-bottom: 60px;
+  }
+}
 
 .footer-info {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 767.98px) {
+  .footer-info {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 .list-footer {
@@ -518,6 +621,11 @@ header {
   margin-bottom: 20px;
 }
 
-.footer-description {
-  width: 25%;
+.footer-phone {
+  margin-right: 30px;
+}
+@media screen and (max-width: 767.98px) {
+  .footer-phone {
+    margin-right: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,10 @@
 .additional {
     position: relative;
     transform: translate(0, -30%);
+
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
 }
 
 
@@ -8,6 +12,10 @@
 .additional-item {
     position: absolute;
     transform: translate(25%, -130%);
+
+    @media screen and (max-width: 767.98px) {
+        transform: translate(-15%, -122%);
+    }
 }
 
 
@@ -18,4 +26,11 @@
     width: 502px;
     height: 545px;
     background-image: url(../images/back-2.png);
+
+    @media screen and (max-width: 767.98px) {
+        transform: translate(0, -13%);
+        width: 310px;
+        height: 328px;
+        background-image: url(../../images/back-2-tab.png);
+    }
 }
