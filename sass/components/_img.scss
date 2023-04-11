@@ -1,20 +1,30 @@
 .hero-img {
-    width: 525px;
-    height: 443px;
+    width: 260px;
+    height: 198px;
 
-    @media screen and (max-width: 767.98px) {
+    @media screen and (min-width: 768px) {
         width: 369px;
         height: 310px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 525px;
+        height: 443px;
     }
 }
 
 .advances-img {
-    width: 459px;
-    height: 464px;
+    // width: 459px;
+    // height: 464px;
 
-    @media screen and (max-width: 767.98px) {
+    @media screen and (min-width: 768px) {
         width: 338px;
         height: 346px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 459px;
+        height: 464px;
     }
 }
 
