@@ -305,12 +305,12 @@ header {
 }
 
 .presentation {
-  width: 66.6666666667%;
-  margin-bottom: 120px;
+  width: 83.3333333333%;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .presentation {
-    width: 83.3333333333%;
+    width: 66.6666666667%;
+    margin-bottom: 120px;
   }
 }
 
@@ -407,18 +407,18 @@ header {
 }
 
 .icon-arrow {
-  width: 67px;
-  height: 67px;
+  width: 40px;
+  height: 40px;
   fill: var(--title-color);
   transition-duration: 250ms;
 }
 .icon-arrow:hover, .icon-arrow:focus {
   fill: var(--title-second-color);
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .icon-arrow {
-    width: 40px;
-    height: 40px;
+    width: 67px;
+    height: 67px;
   }
 }
 
@@ -649,35 +649,35 @@ header {
   position: relative;
   transform: translate(0, -30%);
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .additional {
     display: none;
   }
 }
 
 .additional-item {
-  position: absolute;
-  transform: translate(25%, -130%);
+  transform: translate(-15%, -122%);
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .additional-item {
-    transform: translate(-15%, -122%);
+    position: absolute;
+    transform: translate(25%, -130%);
   }
 }
 
 .basic-item {
-  position: relative;
-  transform: translate(0, -10%);
-  width: 502px;
-  height: 545px;
-  background-image: url(../images/back-2.png);
+  transform: translate(0, -13%);
+  width: 310px;
+  height: 328px;
+  background-image: url(../../images/back-2-tab.png);
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .basic-item {
-    transform: translate(0, -13%);
-    width: 310px;
-    height: 328px;
-    background-image: url(../../images/back-2-tab.png);
+    position: relative;
+    transform: translate(0, -10%);
+    width: 502px;
+    height: 545px;
+    background-image: url(../images/back-2.png);
   }
 }
 

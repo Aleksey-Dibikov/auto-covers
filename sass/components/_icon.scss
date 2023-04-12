@@ -26,8 +26,8 @@
 }
 
 .icon-arrow {
-    width: 67px;
-    height: 67px;
+    width: 40px;
+    height: 40px;
     fill: var(--title-color);
     transition-duration: 250ms;
     
@@ -36,9 +36,9 @@
         fill: var(--title-second-color);
     }
 
-    @media screen and (max-width: 767.98px) {
-        width: 40px;
-        height: 40px;
+    @media screen and (min-width: 1200px) {
+        width: 67px;
+        height: 67px;
     }
 }
 

@@ -1,8 +1,8 @@
 .additional {
     position: relative;
     transform: translate(0, -30%);
-
-    @media screen and (max-width: 767.98px) {
+    
+    @media screen and (max-width: 1199.98px) {
         display: none;
     }
 }
@@ -10,27 +10,27 @@
 
 
 .additional-item {
-    position: absolute;
-    transform: translate(25%, -130%);
-
-    @media screen and (max-width: 767.98px) {
-        transform: translate(-15%, -122%);
+    transform: translate(-15%, -122%);
+    
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        transform: translate(25%, -130%);
     }
 }
 
 
 
 .basic-item {
-    position: relative;
-    transform: translate(0, -10%);
-    width: 502px;
-    height: 545px;
-    background-image: url(../images/back-2.png);
+    transform: translate(0, -13%);
+    width: 310px;
+    height: 328px;
+    background-image: url(../../images/back-2-tab.png);
 
-    @media screen and (max-width: 767.98px) {
-        transform: translate(0, -13%);
-        width: 310px;
-        height: 328px;
-        background-image: url(../../images/back-2-tab.png);
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        transform: translate(0, -10%);
+        width: 502px;
+        height: 545px;
+        background-image: url(../images/back-2.png);
     }
 }
