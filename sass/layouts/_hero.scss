@@ -4,6 +4,11 @@
     justify-content: center;
     width: calc(100% / 2 * 2);
 
+    @media screen and (max-width: 767.98px) {
+        align-items: center;
+        margin-top: 60px;
+    }
+
     @media screen and (min-width: 768px) {
         width: calc(100% / 6 * 3);
     }
@@ -18,8 +23,13 @@
     align-items: center;
     font-family: var(--second-font);
     font-weight: 600;
-    font-size: 15px;
-    line-height: 1.53;
+    font-size: 14px;
+    line-height: 1.57;
+
+    @media screen and (min-width: 768px) {
+        font-size: 15px;
+        line-height: 1.53;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 17px;
@@ -27,7 +37,11 @@
     }
     
     &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 20px;
+        }
 
         @media screen and (min-width: 1200px) {
             margin-bottom: 30px;

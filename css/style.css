@@ -89,16 +89,19 @@ header {
 
 .hero-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  height: min-content;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .hero-container {
-    height: 345px;
+    flex-direction: row;
+    min-height: 345px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-container {
-    height: 480px;
+    min-height: 480px;
   }
 }
 
@@ -108,16 +111,23 @@ header {
 }
 
 .btn {
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .btn {
-    margin-top: 30px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    margin-top: 60px;
   }
 }
 
 .button {
-  width: 195px;
+  width: 150px;
   height: 40px;
   background-color: var(--white-color);
   border: 2px solid var(--title-second-color);
@@ -128,21 +138,27 @@ header {
   font-size: 14px;
   line-height: 1.57;
   color: var(--title-color);
-  padding: 10px 20px;
+  padding: 9px 8px;
   transition-duration: 250ms;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .button {
-    width: 150px;
-    padding: 9px 8px;
+    width: 195px;
+    padding: 10px 20px;
   }
 }
 .button:not(:last-child) {
-  margin-right: 60px;
+  margin-bottom: 15px;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .button:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 38px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button:not(:last-child) {
+    margin-right: 60px;
   }
 }
 .button:hover, .button:focus {
@@ -265,15 +281,26 @@ header {
 
 .title {
   font-weight: 400;
-  font-size: 40px;
-  line-height: 1.25;
+  font-size: 25px;
+  line-height: 1.24;
   color: var(--title-color);
   margin-bottom: 60px;
 }
 @media screen and (max-width: 767.98px) {
   .title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
     font-size: 30px;
     line-height: 1.27;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 40px;
+    line-height: 1.25;
   }
 }
 
@@ -343,10 +370,16 @@ header {
 }
 
 .marker {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   margin-right: 10px;
   fill: var(--title-second-color);
+}
+@media screen and (min-width: 768px) {
+  .marker {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .icon-arrow {
@@ -543,8 +576,13 @@ header {
 
 .hero {
   background-image: url(../images/back.png);
-  background-size: 50% 100%;
+  background-size: 95% 45%;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-size: 50% 100%;
+  }
 }
 
 .visualization {
@@ -595,6 +633,12 @@ header {
   justify-content: center;
   width: 100%;
 }
+@media screen and (max-width: 767.98px) {
+  .hero-content {
+    align-items: center;
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-content {
     width: 50%;
@@ -611,8 +655,14 @@ header {
   align-items: center;
   font-family: var(--second-font);
   font-weight: 600;
-  font-size: 15px;
-  line-height: 1.53;
+  font-size: 14px;
+  line-height: 1.57;
+}
+@media screen and (min-width: 768px) {
+  .hero-item {
+    font-size: 15px;
+    line-height: 1.53;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-item {
@@ -621,7 +671,12 @@ header {
   }
 }
 .hero-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .hero-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-item:not(:last-child) {

@@ -14,10 +14,15 @@
 }
 
 .marker {
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     margin-right: 10px;
     fill: var(--title-second-color);
+
+    @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 14px;
+    }
 }
 
 .icon-arrow {
