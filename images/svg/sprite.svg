@@ -49,5 +49,8 @@
 <symbol id="icon-hamburger" viewBox="0 0 44 32">
 <path d="M0 0.444h44.444v4.444h-44.444v-4.444zM0 13.778h44.444v4.444h-44.444v-4.444zM0 27.111h44.444v4.444h-44.444v-4.444z"></path>
 </symbol>
+<symbol id="icon-cross" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M30.4 31.2l-28.8-28.8M30.4 2.4l-28.8 28.8"></path>
+</symbol>
 </defs>
 </svg>

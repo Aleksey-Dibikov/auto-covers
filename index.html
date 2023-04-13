@@ -82,12 +82,39 @@
             </li>
           </ul>
         </div>
-        <svg class="icon-burger">
-          <use href="./images/svg/sprite.svg#icon-hamburger"></use>
-        </svg>
+        <button class="menu-btn nav-btn-menu" type="button" data-menu-button>
+          <svg class="icon-menu">
+            <use
+              class="icon-burger"
+              href="./images/svg/sprite.svg#icon-hamburger"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/svg/sprite.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
-    <div class="menu-information"></div>
+    <div class="menu-information" data-menu>
+      <ul class="list menu-tab">
+        <li class="menu-item">
+          <a class="link" href="#about">Про чохли</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="#visualization">Як виглядають</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="#reviews">Відгуки</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="#information">Як доставляємо</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="#footer">Контакти</a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="hero">
         <div class="container hero-container">
@@ -402,5 +429,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

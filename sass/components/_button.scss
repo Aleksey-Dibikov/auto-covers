@@ -51,3 +51,15 @@
         color: var(--white-color);
     }
 }
+
+.menu-btn{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.nav-btn-menu {
+    z-index: 200;
+}
