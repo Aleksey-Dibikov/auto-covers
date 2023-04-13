@@ -1,7 +1,6 @@
 .information {
     display: grid;
     gap: 30px;
-    // grid-template-columns: repeat(4, auto);
 
     @media screen and (min-width: 768px) {
         grid-template-columns: repeat(2, auto);

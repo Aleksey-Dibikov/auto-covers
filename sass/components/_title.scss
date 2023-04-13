@@ -42,7 +42,11 @@
 }
 
 .presentation {
-    width: calc(100% / 6 * 5);
+    width: calc(100% / 2 * 2);
+
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 6 * 5);
+    }
     
     @media screen and (min-width: 1200px) {
         width: calc(100% / 12 * 8);
