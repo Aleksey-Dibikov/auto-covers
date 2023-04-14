@@ -1,18 +1,30 @@
+.mob_tab-menu{
+    @media screen and (min-width: 768px) {
+        background-image: url(../../images/back-menu-tab-yellow.png);
+        background-repeat: no-repeat;
+    }
+}
+
 .menu-information {
     position: fixed;
     top: 0;
     right: -100%;
     z-index: 100;
     width: 35%;
-    height: 80vh;
+    height: max-content;
     transition-property: right;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--white-color);
 
-    // @media screen and (min-width: 768px) {
-    //     height: 80vh;
-    // }
+    @media screen and (min-width: 768px) {
+        background-image: url(../../images/back-menu-tab-blue.png);
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
 
 .menu-information.is-open {
@@ -20,16 +32,16 @@
 }
 
 .icon-cross {
-    transform: scale(0.45, 0.45);
+    transform: scale(0.5, 0.5);
     display: none;
-
-    @media screen and (min-width: 1366px) {
-        transform: scale(0.6, 0.6);
-    }
 }
 
 .is-open .icon-cross {
     display: block;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
 
 .is-open .icon-burger {
@@ -43,9 +55,21 @@
 .menu-tab {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 60px 30px;
 
     @media screen and (min-width: 768px) {
         padding: 100px 50px;
+    }
+}
+
+.menu-item {
+    font-size: 17px;
+    line-height: 1.24;
+
+    @media screen and (min-width: 768px) {
+        font-size: 23px;
+        line-height: 1.26;
     }
 }
 
