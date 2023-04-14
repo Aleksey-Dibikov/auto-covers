@@ -471,7 +471,7 @@ header {
 .icon-arrow:hover, .icon-arrow:focus {
   fill: var(--title-second-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .icon-arrow {
     width: 40px;
     height: 40px;
@@ -481,6 +481,20 @@ header {
   .icon-arrow {
     width: 67px;
     height: 67px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .icon-arrow_left {
+    position: absolute;
+    transform: translate(-15px, 0);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .icon-arrow_right {
+    position: absolute;
+    transform: translate(245px, 0);
   }
 }
 

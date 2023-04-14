@@ -58,7 +58,7 @@
         fill: var(--title-second-color);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         width: 40px;
         height: 40px;
     }
@@ -66,6 +66,20 @@
     @media screen and (min-width: 1200px) {
         width: 67px;
         height: 67px;
+    }
+}
+
+.icon-arrow_left {
+    @media screen and (max-width: 767.98px) {
+        position: absolute;
+        transform: translate(-15px, 0);
+    }
+}
+
+.icon-arrow_right {
+    @media screen and (max-width: 767.98px) {
+        position: absolute;
+        transform: translate(245px, 0);
     }
 }
 
