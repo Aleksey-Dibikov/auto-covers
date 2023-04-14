@@ -127,7 +127,7 @@ header {
 }
 
 .button {
-  width: 150px;
+  min-width: 150px;
   height: 40px;
   background-color: var(--white-color);
   border: 2px solid var(--title-second-color);
@@ -239,7 +239,7 @@ header {
 .icon {
   width: 50px;
   height: 42px;
-  background-image: url(../../images/icon-back-tab.png);
+  background-image: url(../images/icon-back-tab.png);
   background-position: center;
   background-repeat: no-repeat;
   fill: var(--additional-color);
@@ -254,7 +254,7 @@ header {
 }
 @media screen and (max-width: 767.98px) {
   .icon:hover {
-    background-image: url(../../images/icon-hover-tab.png);
+    background-image: url(../images/icon-hover-tab.png);
     background-size: auto;
   }
 }
@@ -575,7 +575,7 @@ header {
 .photo-item {
   width: 260px;
   height: 302px;
-  background-image: url(../../images/back-mobile.png);
+  background-image: url(../images/back-mobile.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -657,7 +657,7 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--white-color);
-  background-image: url(../../images/back-menu-tab-blue.png);
+  background-image: url(../images/back-menu-tab-blue.png);
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
@@ -673,7 +673,7 @@ header {
 
 @media screen and (max-width: 767.98px) {
   .mobile-menu {
-    background-image: url(../../images/back-menu-mobile.png);
+    background-image: url(../images/back-menu-mobile.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     padding: 60px 30px;
@@ -718,7 +718,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .menu-tab {
-    background-image: url(../../images/back-menu-tab-yellow.png);
+    background-image: url(../images/back-menu-tab-yellow.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     padding: 100px 50px;
@@ -843,7 +843,7 @@ header {
   transform: translate(0, -13%);
   width: 310px;
   height: 328px;
-  background-image: url(../../images/back-2-tab.png);
+  background-image: url(../images/back-2-tab.png);
 }
 @media screen and (max-width: 767.98px) {
   .basic-item {

@@ -9,7 +9,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--white-color);
-    background-image: url(../../images/back-menu-tab-blue.png);
+    background-image: url(../images/back-menu-tab-blue.png);
     background-repeat: no-repeat;
 
     @media screen and (min-width: 768px) {
@@ -23,7 +23,7 @@
 
 .mobile-menu {
     @media screen and (max-width: 767.98px) {
-        background-image: url(../../images/back-menu-mobile.png);
+        background-image: url(../images/back-menu-mobile.png);
         background-repeat: no-repeat;
         background-position: bottom right;
         padding: 60px 30px;
@@ -65,7 +65,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        background-image: url(../../images/back-menu-tab-yellow.png);
+        background-image: url(../images/back-menu-tab-yellow.png);
         background-repeat: no-repeat;
         background-position: bottom right;
         padding: 100px 50px;

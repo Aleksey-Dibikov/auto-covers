@@ -30,7 +30,7 @@
 .icon {
     width: 50px;
     height: 42px;
-    background-image: url(../../images/icon-back-tab.png);
+    background-image: url(../images/icon-back-tab.png);
     background-position: center;
     background-repeat: no-repeat;
     fill: var(--additional-color);
@@ -44,7 +44,7 @@
         fill: var(--title-second-color);
 
         @media screen and (max-width: 767.98px) {
-            background-image: url(../../images/icon-hover-tab.png);
+            background-image: url(../images/icon-hover-tab.png);
             background-size: auto;
         }
     }
