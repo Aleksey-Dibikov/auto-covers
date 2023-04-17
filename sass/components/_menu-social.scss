@@ -37,15 +37,15 @@
     transition-duration: 250ms;
     
     &:hover {
-        background-image: url(../images/icon-hover.png);
-        background-size: 70px 60px;
+        background-image: url(../images/icon-hover-tab.png);
+        background-size: 50px 42px;
         background-position: center;
         background-repeat: no-repeat;
         fill: var(--title-second-color);
 
-        @media screen and (max-width: 767.98px) {
-            background-image: url(../images/icon-hover-tab.png);
-            background-size: auto;
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/icon-hover.png);
+            background-size: 70px 60px;
         }
     }
 

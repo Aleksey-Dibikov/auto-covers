@@ -57,6 +57,10 @@ img {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background-color: var(--body-background);
   box-shadow: 0px 3px 3.5px rgba(0, 0, 0, 0.35);
 }
 
@@ -173,10 +177,32 @@ header {
   background: none;
   border: none;
   padding: 0;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .menu-btn {
+    display: none;
+  }
 }
 
-.nav-btn-menu {
-  z-index: 200;
+.slide-btn {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  .slide-btn_left {
+    position: absolute;
+    transform: translate(-15px, 0);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .slide-btn_right {
+    position: absolute;
+    transform: translate(245px, 0);
+  }
 }
 
 .nav-menu {
@@ -197,7 +223,7 @@ header {
   align-items: center;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199.98px) {
   .navigation {
     margin-right: 120px;
   }
@@ -246,16 +272,16 @@ header {
   transition-duration: 250ms;
 }
 .icon:hover {
-  background-image: url(../images/icon-hover.png);
-  background-size: 70px 60px;
+  background-image: url(../images/icon-hover-tab.png);
+  background-size: 50px 42px;
   background-position: center;
   background-repeat: no-repeat;
   fill: var(--title-second-color);
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .icon:hover {
-    background-image: url(../images/icon-hover-tab.png);
-    background-size: auto;
+    background-image: url(../images/icon-hover.png);
+    background-size: 70px 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -439,8 +465,15 @@ header {
 
 .cross {
   position: fixed;
-  top: 20px;
+  z-index: 101;
+  top: 15%;
   right: 40px;
+}
+@media screen and (max-width: 767.98px) {
+  .cross {
+    top: 12%;
+    right: 25px;
+  }
 }
 
 .icon-cross {
@@ -481,20 +514,6 @@ header {
   .icon-arrow {
     width: 67px;
     height: 67px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .icon-arrow_left {
-    position: absolute;
-    transform: translate(-15px, 0);
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .icon-arrow_right {
-    position: absolute;
-    transform: translate(245px, 0);
   }
 }
 
@@ -662,7 +681,7 @@ header {
 
 .menu-information {
   position: fixed;
-  top: 0;
+  top: 9%;
   right: -100%;
   z-index: 100;
   width: 80%;
@@ -676,6 +695,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .menu-information {
+    top: 11%;
     width: 35%;
   }
 }
