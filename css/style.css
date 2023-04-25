@@ -333,6 +333,10 @@ header {
   color: var(--title-second-color);
 }
 
+.modal-heading {
+  color: var(--title-color);
+}
+
 .title {
   font-weight: 400;
   font-size: 25px;
@@ -433,6 +437,15 @@ header {
 
 .footer-title {
   color: var(--white-color);
+}
+
+.title__label {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
 
 .icon-menu {
@@ -779,6 +792,87 @@ header {
   }
 }
 
+.modal__button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--body-background);
+}
+
+.modal__button--icon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--title-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+}
+.modal__button--icon:hover, .modal__button--icon:focus {
+  stroke: var(--title-second-color);
+}
+
+.registration__button {
+  margin-top: 20px;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input__line {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  outline: currentColor;
+  transition-property: border-color;
+  transition-duration: 250ms;
+}
+
+.textarea__window {
+  width: 100%;
+  height: 120px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  resize: none;
+  outline: currentColor;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input__line,
+.textarea__window {
+  font-family: var(--second-font);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.input__line:hover, .input__line:focus,
+.textarea__window:hover,
+.textarea__window:focus {
+  border-color: var(--title-second-color);
+}
+.input__line::placeholder,
+.textarea__window::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .information {
   display: grid;
   gap: 30px;
@@ -1098,5 +1192,91 @@ header {
 @media screen and (min-width: 768px) {
   .footer-phone {
     margin-right: 30px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  min-width: calc((100% - 30px) / 1);
+  height: min-content;
+  padding: 40px;
+  background-color: var(--body-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  min-width: calc((100% - 30px) / 1);
+  height: min-content;
+  padding: 40px;
+  background-color: var(--body-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
   }
 }/*# sourceMappingURL=style.css.map */

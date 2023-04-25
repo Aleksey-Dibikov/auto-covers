@@ -19,6 +19,10 @@
     color: var(--title-second-color);
 }
 
+.modal-heading {
+    color: var(--title-color);
+}
+
 .title {
     font-weight: 400;
     font-size: 25px;
@@ -108,4 +112,13 @@
 
 .footer-title {
     color: var(--white-color);
+}
+
+.title__label {
+    font-family: var(--second-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
 }

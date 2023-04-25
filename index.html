@@ -191,7 +191,9 @@
             </ul>
             <div class="btn">
               <a class="link button" href="#information">Більше інформації</a>
-              <button class="button" type="submit">Зробити замовлення</button>
+              <button class="button" type="button" data-modal-open>
+                Зробити замовлення
+              </button>
             </div>
           </div>
         </div>
@@ -472,7 +474,64 @@
       </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button" data-modal-close>
+          <svg class="modal__button--icon">
+            <use href="./images/svg/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <h4 class="title-head">
+          <span class="modal-heading">Залиште свої дані, і ми</span>
+          Вам передзвонемо!
+        </h4>
+        <form class="registration">
+          <div class="registration__form">
+            <label class="title__label" for="user-name">Ім'я</label>
+            <input class="input__line" type="text" name="name" id="user-name" />
+          </div>
+
+          <div class="registration__form">
+            <label class="title__label" for="user-phone">Телефон</label>
+            <input
+              class="input__line"
+              type="tel"
+              name="phone"
+              id="user-phone"
+            />
+          </div>
+
+          <div class="registration__form">
+            <label class="title__label" for="user-mail"
+              >Марка та модель авто</label
+            >
+            <input
+              class="input__line"
+              type="text"
+              name="value"
+              id="user-auto"
+            />
+          </div>
+
+          <label class="title__label" for="feedback">Коментар</label>
+          <textarea
+            class="textarea__window"
+            name="feedback"
+            id="feedback"
+            cols="31"
+            rows="8"
+            placeholder="Введите текст"
+          ></textarea>
+
+          <button class="button registration__button" type="submit">
+            Зробити замовлення
+          </button>
+        </form>
+      </div>
+    </div>
+
     <script src="./js/menu.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

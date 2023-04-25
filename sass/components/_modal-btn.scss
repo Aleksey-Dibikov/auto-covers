@@ -1,0 +1,33 @@
+.modal__button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--body-background);
+
+}
+
+.modal__button--icon {
+    width: 18px;
+    height: 18px;
+    stroke: var(--title-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    
+    &:hover,
+    &:focus{
+        stroke: var(--title-second-color);
+    }
+}
+
+.registration__button {
+    margin-top: 20px;
+}
