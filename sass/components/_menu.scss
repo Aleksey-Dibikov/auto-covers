@@ -69,7 +69,7 @@
         background-image: url(../images/back-menu-tab-yellow.png);
         background-repeat: no-repeat;
         background-position: bottom right;
-        padding: 100px 50px;
+        padding: 100px 30px;
     }
 }
 
@@ -88,5 +88,16 @@
 
     @media screen and (min-width: 768px) {
         margin-bottom: 30px;
+    }
+}
+
+.mobile-link:hover {
+    font-size: 23px;
+    line-height: 1.26;
+    color: var(--title-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 25px;
+        line-height: 1.24;
     }
 }

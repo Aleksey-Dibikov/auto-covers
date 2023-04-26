@@ -37,11 +37,20 @@
     transition-duration: 250ms;
     
     &:hover {
-        background-image: url(../images/icon-hover-tab.png);
-        background-size: 50px 42px;
-        background-position: center;
-        background-repeat: no-repeat;
-        fill: var(--title-second-color);
+        @media screen and (max-width: 767.98px) {
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/icon-back.png);
+        }
+
+
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/icon-hover-tab.png);
+            background-size: 50px 42px;
+            background-position: center;
+            background-repeat: no-repeat;
+            fill: var(--title-second-color);
+        }
 
         @media screen and (min-width: 1200px) {
             background-image: url(../images/icon-hover.png);
