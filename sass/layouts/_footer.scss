@@ -1,10 +1,5 @@
 .footer {
     background-color: var(--title-color);
-    margin-bottom: 100px;
-
-    @media screen and (max-width: 767.98px) {
-        margin-bottom: 60px;
-    }
 }
 
 .footer-info {
