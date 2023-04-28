@@ -1,63 +1,39 @@
-// const prevBtn = document.querySelector('[data-action = "prev"]');
-// const nextBtn = document.querySelector('[data-action= "next"]');
-// const valueElem = document.querySelector('.photo');
+const slider = document.querySelector(".items");
+		const slides = document.querySelectorAll(".item-img");
+		const button = document.querySelectorAll(".slide-button");
 
-// const slider = {
-//     value: 0,
-//     next() {
-//       this.value += 1
-//   },
-//   prev() {
-//     this.value -= 1;
-//   }
-// };
+		let current = 0;
+		let prev = 4;
+		let next = 1;
 
-// nextBtn.addEventListener('click', function () {
-//   slider.next();
-//   valueElem.textContent = slider.value;
-// });
+		for (let i = 0; i < button.length; i++) {
+			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+		}
 
-// prevBtn.addEventListener('click', function () {
-//   slider.prev();
-//   valueElem.textContent = slider.value;
-// });
+		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-const slider = document.querySelector(".photo");
-const slides = document.querySelectorAll(".slides");
-const button = document.querySelectorAll(".slide-btn");
+		const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
 
-let current = 0;
-let prev = 4;
-let next = 1;
+		const gotoNum = number => {
+			current = number;
+			prev = current - 1;
+			next = current + 1;
 
-for (let i = 0; i < button.length; i++) {
-  button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
-}
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].classList.remove("active");
+				slides[i].classList.remove("prev");
+				slides[i].classList.remove("next");
+			}
 
-const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+			if (next == 5) {
+				next = 0;
+			}
 
-const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+			if (prev == -1) {
+				prev = 4;
+			}
 
-const gotoNum = number => {
-  current = number;
-  prev = current - 1;
-  next = current + 1;
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
-    slides[i].classList.remove("prev");
-    slides[i].classList.remove("next");
-  }
-
-  if (next == 4) {
-    next = 0;
-  }
-
-  if (prev == -1) {
-    prev = 4;
-  }
-
-  slides[current].classList.add("active");
-  slides[prev].classList.add("prev");
-  slides[next].classList.add("next");
-}
+			slides[current].classList.add("active");
+			slides[prev].classList.add("prev");
+			slides[next].classList.add("next");
+		}
