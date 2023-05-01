@@ -10,4 +10,9 @@
 
     mobileMenuRef.classList.toggle("is-open")
   })
+
+  mobileMenuRef.addEventListener('click', () => {
+    menuBtnRef.classList.toggle("is-open")
+    mobileMenuRef.classList.toggle("is-open")
+  })
 })()
